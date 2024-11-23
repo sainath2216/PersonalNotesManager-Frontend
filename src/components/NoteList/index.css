@@ -1,0 +1,118 @@
+
+.note-list {
+    margin-top: 20px;
+}
+
+.note-list .note {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-list .note:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(192, 192, 30, 0.2);
+}
+
+.note-list .list-heading {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #e54141;
+    text-decoration: underline;
+    font-size: 19px;
+    text-align: left;
+}
+
+
+.note-list .list-para {
+    margin: 0 0 10px;
+    color: #0b0909;
+    font-size: 15px;
+    text-align: left;
+}
+
+.note-list .list-cateory {
+    display: block;
+    font-size: 0.9rem;
+    color: #100303;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.cate-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px;
+
+}
+
+.note-list button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.note-list button:hover {
+    transform: scale(1.05);
+}
+
+.note-list button:nth-child(1) {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.note-list button:nth-child(1):hover {
+    background-color: #357abd;
+}
+
+.note-list button:nth-child(2) {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.note-list button:nth-child(2):hover {
+    background-color: #e63946;
+}
+
+
+@media (max-width: 600px) {
+    .app {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar input {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .note-list .note {
+        padding: 10px;
+    }
+
+    .note-list h3 {
+        font-size: 1rem;
+    }
+
+    .note-list p,
+    .note-list span {
+        font-size: 0.85rem;
+    }
+
+    .note-list button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
