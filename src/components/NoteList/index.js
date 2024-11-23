@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./index.css"
+import "./index.css";
 
 const NoteList = ({ notes, deleteNote, setEditNote }) => {
   return (
@@ -12,7 +12,13 @@ const NoteList = ({ notes, deleteNote, setEditNote }) => {
           <div key={note._id} className="note">
             <h1 className="list-heading">{note.title}:</h1>
             <p className="list-para">{note.description}</p>
-            <p className="cate-container"><span className="list-cateory">Category:</span> {note.category}</p>
+            <p className="cate-container">
+              <span className="list-cateory">Category:</span> {note.category}
+            </p>
+            <p className="cate-container">
+              <span className="list-cateory">Created at </span> {":  "}
+              {new Date(note.createdAt).toLocaleString()}
+            </p>
             <div>
               <button onClick={() => setEditNote(note)}>Edit</button>
               <button onClick={() => deleteNote(note._id)}>Delete</button>

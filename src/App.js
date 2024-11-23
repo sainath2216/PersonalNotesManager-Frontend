@@ -17,6 +17,7 @@ const App = () => {
     try {
       const response = await axios.get(API_URL);
       setNotes(response.data.notes);
+      console.log(response)
     } catch (error) {
       console.error("Error fetching notes:", error.message);
     }
