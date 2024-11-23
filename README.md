@@ -1,6 +1,7 @@
 # PERSONAL NOTES MANAGER
 
-![personal-notes-img](https://github.com/user-attachments/assets/8281baef-b42b-4dcf-8977-bf2201df8e0e)
+![notes-personal2](https://github.com/user-attachments/assets/193fb17c-0731-4946-a19d-c5ecaba5de73)
+
 
 
 ### Set Up Instructions
